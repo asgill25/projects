@@ -1,8 +1,7 @@
-﻿// stacks stuff.cpp : Defines the entry point for the console application.
-// <- What is the point of the "//" here? It serves no purpose...
-// I should really add some comments to this...
+// stacks stuff.cpp : Defines the entry point for the console application.
+//
+//
 
-// (c) ASG 2014
 
 //TODO: lots of error catching required
 //TODO: add more comments
@@ -21,7 +20,7 @@
 #include <sstream>
 #include <cctype>
 #include <cmath>
-#include <cstdlib> // :o so many includes...
+#include <cstdlib>
 
 using namespace std;
 
