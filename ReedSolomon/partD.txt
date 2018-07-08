@@ -1,0 +1,1 @@
+Starting with RS(255,223), the message whose encoded polynomial is contained in date.csv, has been recursively encoded 10 times. Each time the Galois field used is increased to the next power of 2. The number of parity bits is always kept the same. Decode the message and print the date.

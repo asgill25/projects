@@ -1,4 +1,8 @@
-import numpy as np
+##########################
+# this is a python script that uses the Laplacian equation to blend an image with a mask into a given background image
+##########################
+
+#  import numpy as np
 from scipy import ndimage
 from scipy import misc
 import scipy.sparse as sp  # spdiags , identity
@@ -8,10 +12,12 @@ import xlrd
 from functools import reduce
 
 
+# calculates the divergence of a given 2D vector field
 def divergence2d(F):
     return np.gradient(F[0])[0] + np.gradient(F[1])[1]
 
 
+# given two gradient fields, this function produces a third that takes the highest value at each point
 def mixed_gradient(grad1, grad2):
     norm1 = np.square(grad1[0]) + np.square(grad1[1])
     norm2 = np.square(grad2[0]) + np.square(grad2[1])
@@ -24,6 +30,8 @@ def mixed_gradient(grad1, grad2):
     mixed[1][lower_vals] = grad1[1][lower_vals]
     return mixed
 
+
+# function to normalise values in the image to a scale of 0 to 1
 def im2double(im):
     min_val = np.min(np.ravel(im))
     max_val = np.max(np.ravel(im))
@@ -33,6 +41,7 @@ def im2double(im):
     return out
 
 
+# returns every point of the map along with its corresponding boundary points
 def Neighbours(msk):
 
     non_zero_elts = np.nonzero(msk)
@@ -74,7 +83,6 @@ def DiscFun(Neigh, f):
 
 
 def DiscFun_RGB(Neigh, f):
-    # NEED TO FIX THIS THING!!!!
     no_points = len(Neigh[0])
     D = (4 * sp.eye(no_points)).tolil()
     bc = np.zeros((no_points, 3))
@@ -142,8 +150,6 @@ if __name__ == '__main__':
     plt.figure(1)
     # plt.subplot(121)
     plt.imshow(u.reshape(fstar.shape))
-
-    # plt.subplot(122)
-    # plt.imshow(u2.reshape(fstar.shape), cmap='gray')
+    plt.savefig('result.png')
     plt.show()
 

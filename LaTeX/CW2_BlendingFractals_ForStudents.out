@@ -1,0 +1,16 @@
+\BOOKMARK [1][-]{section.1}{PART A:Image Blending \(11 pts\)}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{The neighbours [3 pts]}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{Assembling the Discrete Laplace [5 pts]}{section.1}% 3
+\BOOKMARK [2][-]{subsection.1.3}{Guiding gradients [0.5 pts]}{section.1}% 4
+\BOOKMARK [2][-]{subsection.1.4}{Source guiding gradient [0.5 pts]}{section.1}% 5
+\BOOKMARK [2][-]{subsection.1.5}{Mixed guiding gradient [0.5 pts]}{section.1}% 6
+\BOOKMARK [2][-]{subsection.1.6}{An RGB image [0.5 pts]}{section.1}% 7
+\BOOKMARK [2][-]{subsection.1.7}{Impress us [0.5 +0.5]}{section.1}% 8
+\BOOKMARK [1][-]{section.2}{SECTION B: Fractal Growth [9 pts]}{}% 9
+\BOOKMARK [2][-]{subsection.2.1}{The domain [0.5 pts]}{section.2}% 10
+\BOOKMARK [2][-]{subsection.2.2}{The solution in the domain [0.5 pts]}{section.2}% 11
+\BOOKMARK [2][-]{subsection.2.3}{The Neighbours of the fractals [1 pts]}{section.2}% 12
+\BOOKMARK [2][-]{subsection.2.4}{Deposition [4 pts]}{section.2}% 13
+\BOOKMARK [2][-]{subsection.2.5}{Fractal growth [1 pts]}{section.2}% 14
+\BOOKMARK [2][-]{subsection.2.6}{Boundaries [0.5 pts]}{section.2}% 15
+\BOOKMARK [2][-]{subsection.2.7}{Impress us [0.5 pts]}{section.2}% 16
